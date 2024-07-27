@@ -101,8 +101,42 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
+          {id === 2 && <GlobeDemo />}
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-2 lg:gap-6 md:gap-4">
+                {["React Native", "React.js", "Next.js"].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="py-2 lg:py-4 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+                <span className="py-4 lg:py-7 px-3 rounded-lg text-center bg-[#10132e]" />
+              </div>
+              <div className="flex flex-col gap-2 lg:gap-6 md:gap-4">
+                <span className="py-4 lg:py-7 px-3 rounded-lg text-center bg-[#10132e]" />
+                {["TailwindCSS", "TypeScript", "Docker"].map((tech, i) => (
+                  <span
+                    key={i}
+                    className="py-2 lg:py-4 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {id === 6 && (
+            <div className="mt-5 relative">
+              <div className={`absolute -bottom-5 right-0`}>
+                
+              </div>
+            </div>
+          )}
         </div>
-        {id === 2 && <GlobeDemo />}
       </div>
     </div>
   );
