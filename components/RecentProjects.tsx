@@ -39,7 +39,7 @@ function RecentProjects() {
                 <img
                   src={project.img}
                   alt={project.title}
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 px-5"
                 />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
