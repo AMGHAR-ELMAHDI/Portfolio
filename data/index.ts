@@ -185,20 +185,18 @@ export const workExperience = [
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
-  }
+  },
 ];
 
 export const socialMedia = [
   {
     id: 1,
+    link: "https://github.com/AMGHAR-ELMAHDI",
     img: "/git.svg",
   },
   {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
     id: 3,
+    link: "https://www.linkedin.com/in/elmahdi-amghar-148124177",
     img: "/link.svg",
   },
 ];
