@@ -8,6 +8,7 @@ import {
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
+import { LinkPreview } from "./ui/Link-preview";
 
 function Footer() {
   return (
@@ -47,7 +48,9 @@ function Footer() {
               onClick={() => (window.location.href = social.link)}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-200 bg-opacity-75 rounded-full bg-black-200 border border-black-300"
             >
-              <img src={social.img} width={20} height={20} />
+              <LinkPreview url={social.link}>
+                <img src={social.img} width={20} height={20} />
+              </LinkPreview>
             </div>
           ))}
         </div>

@@ -22,16 +22,15 @@ function Hero() {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:maxw-[60vw] flex flex-col items-center justify-center">
-          {/* <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            elmahdi amghar
-          </h2> */}
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="From Visual Concepts to Functional Code"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm  md:text-lg lg:text-xl">
-            Hi! I'm Elmahdi Amghar, a software engineer and a self-taught
-            Mobile/Front-end Developer based in Morocco.
+            Hi! I'm
+            <span className="font-bold text-purple">{" "}ELMAHDI AMGHAR</span>, a
+            software engineer and a self-taught Mobile/Front-end Developer based
+            in Morocco.
           </p>
           <a href="#projects">
             <MagicButton
@@ -47,14 +46,3 @@ function Hero() {
 }
 
 export default Hero;
-
-{
-  /* <p className="text-center md:tracking-wider mb-4 text-sm  md:text-lg lg:text-xl">
-Hi there! I'm Elmahdi Amghar, a software engineer and a self-taught
-Mobile/Front-end Developer based in Morocco. I'm passionate about
-creating beautiful and functional interfaces. I'm also a student at
-1337 which is part of 42 network and UM6P.I'm always looking for new
-opportunities to learn and grow. Feel free to reach out to me if you
-have any questions or just want to chat. I'd love to hear from you!
-</p> */
-}
