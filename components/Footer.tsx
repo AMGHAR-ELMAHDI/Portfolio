@@ -21,7 +21,7 @@ function Footer() {
           <TextRevealCard
             text="Email"
             revealText="amgharmahdi1@gmail.com "
-            className="text-purple text-xs"
+            className="text-purple text-xs bg-slate-900/[0.8] border-none"
           >
             <TextRevealCardTitle>Contact</TextRevealCardTitle>
             <TextRevealCardDescription>
