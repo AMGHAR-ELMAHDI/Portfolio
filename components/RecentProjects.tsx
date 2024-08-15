@@ -1,23 +1,9 @@
-"use client";
 import { projects } from "@/data";
 import React, { useEffect, useState } from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 
 function RecentProjects() {
-  const [width, setWidth] = useState<number>(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
-
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
 
   return (
     <div className="py-20" id="projects">
@@ -61,11 +47,6 @@ function RecentProjects() {
                   ))}
                 </div>
                 <div className="flex justify-center items-center">
-                  {width > 768 && (
-                    <p className="lg:text-xl md:text-xs text-xs text-purple">
-                      View the project
-                    </p>
-                  )}
                   <FaLocationArrow className="text-purple ms-3" />
                 </div>
               </div>
