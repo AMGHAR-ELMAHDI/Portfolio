@@ -167,16 +167,16 @@ const Stars = () => {
             repeat: Infinity,
             ease: "linear",
           }}
-          style={{
-            position: "absolute",
-            top: `${random() * 100}%`,
-            left: `${random() * 100}%`,
-            width: `2px`,
-            height: `2px`,
-            backgroundColor: "white",
-            borderRadius: "50%",
-            zIndex: 1,
-          }}
+          // style={{
+          //   position: "absolute",
+          //   top: `${random() * 100}%`,
+          //   left: `${random() * 100}%`,
+          //   width: `2px`,
+          //   height: `2px`,
+          //   backgroundColor: "white",
+          //   borderRadius: "50%",
+          //   zIndex: 1,
+          // }}
           className="inline-block"
         ></motion.span>
       ))}

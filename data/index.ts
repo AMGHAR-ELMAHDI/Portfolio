@@ -124,7 +124,7 @@ export const projects = [
       "/redis.png",
       "/portainer.svg",
     ],
-    link: "https://github.com/AmGHAR-ELMAHDI/Inception",
+    link: "https://github.com/AMGHAR-ELMAHDI/Inception",
   },
 ];
 
