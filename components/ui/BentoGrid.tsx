@@ -8,6 +8,7 @@ import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { Meteors } from "./Meteors";
+import { motion } from "framer-motion";
 
 export const BentoGrid = ({
   className,
@@ -145,16 +146,37 @@ export const BentoGridItem = ({
           )}
 
           {id === 6 && (
-            <MagicButton
-              title={copy ? "Email Copied" : "Copy Email"}
-              icon={<IoCopyOutline />}
-              position="right"
-              extraClasses="!bg-[#161a31]"
-              handleClick={handleCopy}
-            />
+            <motion.div
+              className=" w-full flex items-center justify-center mt-4"
+              animate={copy && { rotate: 360 }}
+              transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+            >
+              <MagicButton
+                title={copy ? "Email Copied" : "Copy Email"}
+                icon={<IoCopyOutline />}
+                position="right"
+                extraClasses={`${copy && "text-gray-600 cursor-auto"} !bg-[#161a31]`}
+                handleClick={handleCopy}
+              />
+            </motion.div>
           )}
         </div>
       </div>
     </div>
   );
 };
+
+export function Example() {
+  return (
+    <motion.div
+      style={{
+        width: 150,
+        height: 150,
+        borderRadius: 30,
+        backgroundColor: "#fff",
+      }}
+      animate={{ rotate: 360 }}
+      transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+    />
+  );
+}
