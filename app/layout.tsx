@@ -5,8 +5,9 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio",
+  title: "AMGHAR ELMAHDI",
+  description: "AMGHAR ELMAHDI's Portfolio",
+  icons: "exp1.svg",
 };
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-        {children}
+          {children}
         </ThemeProvider>
       </body>
     </html>

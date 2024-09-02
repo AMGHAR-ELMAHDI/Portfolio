@@ -2,7 +2,8 @@ export const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Experience", link: "#experience" },
+  { name: "Approach", link: "#approach" },
+  // { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -141,7 +142,7 @@ export const workExperience = [
     title: "Mobile Developer (Freelance)",
     desc: "Assisted in the development of a React Native mobile app for a client, from initial concept to deployment on app stores.",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: "/exp4.svg",
   },
 ];
 
