@@ -28,9 +28,9 @@ function Hero() {
           />
           <p className="text-center md:tracking-wider mb-4 text-sm  md:text-lg lg:text-xl">
             Hi! I'm
-            <span className="font-bold text-purple">{" "}ELMAHDI AMGHAR</span>, a
-            software engineer and a self-taught Mobile/Front-end Developer based
-            in Morocco.
+            <span className="font-bold text-purple"> ELMAHDI AMGHAR</span>, a
+            software engineer and a self-taught Web/Mobile Developer based in
+            Morocco.
           </p>
           <a href="#projects">
             <MagicButton

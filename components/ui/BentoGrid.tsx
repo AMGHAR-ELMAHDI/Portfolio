@@ -3,8 +3,6 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
-import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { Meteors } from "./Meteors";
@@ -34,8 +32,6 @@ interface Props {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  icon?: React.ReactNode;
   img?: string;
   imgClassName?: string;
   titleClassName?: string;
@@ -47,8 +43,6 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
-  icon,
   img,
   imgClassName,
   titleClassName,
@@ -121,26 +115,28 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-2 lg:gap-6 md:gap-4">
-                {["React Native", "React.js", "Next.js"].map((tech, i) => (
-                  <span
-                    key={i}
-                    className="py-2 lg:py-4 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {tech}
-                  </span>
-                ))}
-                <span className="py-4 lg:py-7 px-3 rounded-lg text-center bg-[#10132e]" />
+                {["React Native", "React.js", "Next.js", "Node.js"].map(
+                  (tech, i) => (
+                    <span
+                      key={i}
+                      className="py-2 lg:py-4 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
               </div>
               <div className="flex flex-col gap-2 lg:gap-6 md:gap-4">
-                <span className="py-4 lg:py-7 px-3 rounded-lg text-center bg-[#10132e]" />
-                {["TailwindCSS", "TypeScript", "Docker"].map((tech, i) => (
-                  <span
-                    key={i}
-                    className="py-2 lg:py-4 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                {["Express", "TailwindCSS", "TypeScript", "Docker"].map(
+                  (tech, i) => (
+                    <span
+                      key={i}
+                      className="py-2 lg:py-4 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           )}
@@ -155,7 +151,9 @@ export const BentoGridItem = ({
                 title={copy ? "Email Copied" : "Copy Email"}
                 icon={<IoCopyOutline />}
                 position="right"
-                extraClasses={`${copy && "text-gray-600 cursor-auto"} !bg-[#161a31]`}
+                extraClasses={`${
+                  copy && "text-gray-600 cursor-auto"
+                } !bg-[#161a31]`}
                 handleClick={handleCopy}
               />
             </motion.div>

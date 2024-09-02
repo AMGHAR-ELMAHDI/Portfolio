@@ -139,7 +139,7 @@ export const workExperience = [
   {
     id: 3,
     title: "Mobile Developer (Freelance)",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "Assisted in the development of a React Native mobile app for a client, from initial concept to deployment on app stores.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
