@@ -45,7 +45,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
+    img: "",
     spareImg: "/b4.svg",
   },
 
@@ -57,7 +57,7 @@ export const gridItems = [
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
-    spareImg: "/grid.svg",
+    spareImg: "",
   },
   {
     id: 6,
@@ -90,7 +90,7 @@ export const projects = [
     id: 2,
     title: "GameHub",
     des: "Explore a library of games, filter and sort by various criteria, including genre, platform, and release date...",
-    img: "/GameHubDesktop.png",
+    img: "/GameHubDesktop.jpg",
     iconLists: ["/re.svg", "/ts.svg", "/Chakra.png"],
     link: "https://game-hub-tawny-kappa.vercel.app/",
   },
