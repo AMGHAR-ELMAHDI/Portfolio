@@ -74,7 +74,7 @@ To get a local copy up and running follow these simple example steps:
  npm run dev
 ```
 
-  <h2 align="center"><a href="https://game-hub-tawny-kappa.vercel.app/">Click Here for Preview</a></h2>
+  <h2 align="center"><a href="https://www.amghar-elmahdi.social/">Click Here for Preview</a></h2>
 
 ## Contact
 
