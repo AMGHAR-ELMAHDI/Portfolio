@@ -84,7 +84,7 @@ export const projects = [
       "/docker.png",
       "postgresql.png",
     ],
-    link: "https://github.com/AMGHAR-ELMAHDI/",
+    link: "https://github.com/AMGHAR-ELMAHDI/ft_transcendence",
   },
   {
     id: 2,
@@ -100,7 +100,7 @@ export const projects = [
     des: "Mobile Application made with react native, Create an account, publish ai videos, and discover what others shared.",
     img: "/Signup.jpg",
     iconLists: ["/ReactNative.png", "/tail.svg", "/ts.svg"],
-    link: "https://github.com/AMGHAR-ELMAHDI/React-Native-Aora",
+    link: "https://github.com/AMGHAR-ELMAHDI/Aora",
   },
   {
     id: 4,
@@ -108,7 +108,7 @@ export const projects = [
     des: "Implementing a Web server from scratch using low-level socket programming techniques in C++98.",
     img: "/WebServ.png",
     iconLists: ["/c++.png", "/nginx.png"],
-    link: "https://github.com/AMGHAR-ELMAHDI/WebServ",
+    link: "https://github.com/AMGHAR-ELMAHDI/Webserv",
   },
   {
     id: 4,
